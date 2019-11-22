@@ -36,14 +36,21 @@ export interface Address {
   };
 }
 
+export interface Company {
+  readonly name: string;
+  readonly catchPhrase: string;
+  readonly bs: string;
+}
+
 export class UserResource extends BaseResource {
-  readonly id: number | undefined = undefined;
+  readonly id: number = -1;
   readonly name: string = '';
   readonly username: string = '';
   readonly email: string = '';
   readonly phone: string = '';
   readonly website: string = '';
   readonly address: Address | null = null;
+  readonly company: Company | null = null;
 
   pk() {
     return this.id;
