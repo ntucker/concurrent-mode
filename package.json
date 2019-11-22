@@ -1,0 +1,60 @@
+{
+  "name": "concurrent-mode-experiments",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode=development",
+    "prod": "serve ./generated_assets",
+    "build": "webpack --mode=production",
+    "build:server": "webpack --mode=production --target=node",
+    "analyze": "webpack --mode=production --analyze",
+    "profile": "webpack --mode=production --profile",
+    "pkgcheck": "webpack --check=nobuild",
+    "type-check": "tsc --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@anansi/babel-preset": "^0.22.1",
+    "@anansi/browserslist-config": "^0.0.5",
+    "@anansi/eslint-config": "^0.6.6",
+    "@anansi/webpack-config": "^0.17.5",
+    "@babel/core": "^7.7.2",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-info": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "@types/classnames": "^2.2.9",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/storybook__react": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.19.1",
+    "serve": "^11.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@anansi/polyfill": "^0.3.28",
+    "@babel/runtime": "^7.7.2",
+    "classnames": "^2.2.6",
+    "core-js": "^3.2.1",
+    "history": "^4.10.1",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "redbox-react": "^1.6.0",
+    "rest-hooks": "4.0.0-beta.0",
+    "typescript": "3.7.2"
+  },
+  "browserslist": [
+    "extends @anansi/browserslist-config"
+  ]
+}
