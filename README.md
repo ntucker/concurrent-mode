@@ -20,3 +20,8 @@ yarn analyze
 ```
 
 Then look in `generated_assets/report.html` to see report
+
+
+### Playing around
+
+Open `src/index.tsx` to customize which mode you run in and control network fake throttling

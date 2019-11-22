@@ -11,8 +11,8 @@ import App from './App';
 const history = createBrowserHistory();
 
 window.fetchSlow = true;
-``;
 //window.fetchSlow = false;
+
 async function init() {
   await loadPolyfills();
   const rootElement = document.body;
