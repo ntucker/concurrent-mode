@@ -12,7 +12,7 @@ const extraTimeout = 0;
 export const slowFetch = async (url: string, timeout = extraTimeout) => {
   const response = await fetch(url);
   const data = await response.json();
-  await promiseTimeout(timeout + Math.random() * 1000);
+  await promiseTimeout(timeout + Math.random() * 1000 + 500);
   return data;
 };
 
